@@ -1,6 +1,8 @@
 # Attestation junior (Platformeco developer)
 By Vihlyaev Vladimir
 
+_Made with **reveal.js**_
+
 ## How to start locally
 
 1. `git  clone`
