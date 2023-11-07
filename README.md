@@ -7,3 +7,5 @@ By Vihlyaev Vladimir
 2. `npm i`
 3. `npm start`
 4. Go to `localhost:8000`
+
+_All code for the presentation is in `index.html`_

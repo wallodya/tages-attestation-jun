@@ -1,298 +1,877 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-                    #### Аттестация
-                    ## Junior разаротчик (Platfformeco)
-                    Вихляев Владимир
-                </section>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
 
-				<section data-markdown>
-                    ### Общие компетенции 
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                #### Аттестация
+                ## Junior разаротчик (Platfformeco)
+                Вихляев Владимир
+            </section>
+
+            <section data-markdown>
+                ### Общие компетенции
+            </section>
+
+            <section>
+                <section data-markdown>
+                    ## YouTrack, Jira
                 </section>
 
                 <section>
-                    <section data-markdown>
-                        ## YouTrack, Jira
-                    </section>
-
-                    <section data-markdown>
-                        Знать регламент workflow
-                        Создавать задачу, согласно регламенту
-                    </section>
-                    <section data-markdown>
-                        Трекать время
-                    </section>
-                    <section data-markdown>
-                        Настраивать уведомления
-                    </section>
-                    <section data-markdown>
-                        Использовать Google календарь: пользоваться / уметь принять / создать встречу / отклонить / поставить "отсутствие"
-                    </section>
+                    Знать регламент workflow.
+                    Создавать задачу согласно регламенту
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/misc/jira-edit-1.png" style="height: 500px;" />
+                        <img class="fragment r-frame" src="public/images/misc/jira-edit-2.png" style="height: 500px;" />
+                    </div>
                 </section>
                 <section>
-                    <section data-markdown>
-                        ## Git
-                    </section>
-                    <section data-markdown>
-                        - Создавать ветки согласно регламенту
-                        - Создавать merge request согласно регламенту (скрины  MR'ов)
-                    </section>
-                    <section data-markdown>
-                        Основной workflow
 
-                        - .gitignore
-                        - git clone
-                        - git pull
-                    </section>
-                    <section data-markdown>
-                        Создание ветки
-                    </section>
-                    <section data-markdown>
-                        Staging, commiting, remote
-
-                        - git push
-                        - git commit
-                        - git add
-                    </section>
-                    <section data-markdown>
-                        Создание ветки
-                    </section>
-                    <section data-markdown>
-                        Инттерактивный ребейз
-                    </section>
-                    <section>
-                        Логи
-                    </section>
+                    Трекать время
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/misc/you-track-track.png" style="height: 500px;" />
+                        <img class="fragment r-frame" src="public/images/misc/you-track-task.png" style="height: 500px;" />
+                    </div>
                 </section>
                 <section>
-                    <section data-markdown>
-                        # Docker, K8S
-                    </section>
-                    <section data-markdown>
-                        - Знать Docker run
-                        - Использовать docker-compose на уровне чтения и изменения переменных окружения
-                        - Использовать на базовом уровне K8S (умение пользоваться lens/прокидывать порты)    
-                    </section>
+                    Настраивать уведомления
+                    <img src="public/images/misc/you-track-notifs.png" style="height: 500px;" />
                 </section>
                 <section>
-                    <section data-markdown>
-                        ## Инфраструктура
-                    </section>
-                    <section data-markdown>
-                        Понимать / читать аналитику по поставленной задаче,
-                        задавать вопросы соответствующим участникам процесса
-                    </section>
+                    Использовать Google календарь: пользоваться / уметь принять / создать встречу / отклонить /
+                    поставить "отсутствие"
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/misc/calendar-week.png" style="height: 500px;" />
+                        <img class="fragment r-frame" src="public/images/misc/calendar-meet-1.png" style="height: 500px;" />
+                        <img class="fragment r-frame" src="public/images/misc/calendar-meet-2.png" style="height: 500px;" />
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    ## Git
+                </section>
+                <section>
+                    Создавать ветки согласно регламенту
+                    <pre>
 
-                    <section data-markdown>
-                        Понимать архитектуру проекта в целом (Frontend/Backend/DB/Маршрутизация)
-                    </section>
- 
-                    <section data-markdown>
-                        Знать, что такое переменные окружения
-                    </section>
-                    <section data-markdown>
-                        Использовать Markdown / знать синтаксис
-                    </section>
+                            <code data-trim data-line-numbers="1|2|3|4|5">
+                                $ git switch -c feat/FLORA-20366
+                                $ git push --set-upstream origin feat/FLORA-20366
+                                $ git branch -d feat/FLORA-20366
+                                $ git push -d origin feat/FLORA-20366
+                                $ git push origin feat/FLORA-20366-clean:feat/FLORA-20366
+                            </code>
+                        </pre>
+                </section>
+                <section>
+                    Создавать merge request согласно регламенту
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/git/MR-1.png" style="height: 500px;" />
+                        <img class="fragment r-frame" src="public/images/git/MR-2-w-likes.png" style="height: 500px;" />
+                        <img class="fragment r-frame" src="public/images/git/all-MRs-taskandevent.png" style="height: 400px;" />
+                    </div>
+                </section>
+                <section data-markdown>
+                    Основной workflow
+
+                    - .gitignore
+                    - git clone
+                    - git pull
+                </section>
+                <section>
+                    Staging, commiting, remote
+                    <div class="r-stack">
+
+                        <div class="fragment fade-out" data-markdown>
+                            - git add
+                            - git commit
+                            - git push
+                        </div>
+                        <pre class="fragment">
+                            <code data-trim data-line-numbers="1|2-3|4">
+                                $ git add .
+                                $ git commit -m “created getLegalEventsByOrder definition \
+                                    with docs”  
+                                $ git push origin 
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section>
+                    Merge, rebase
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/git/git-merge-man.png" style="height: 300px;" />
+                        <img class="fragment r-frame" src="public/images/git/git-rebase-man.png" style="height: 300px;" />
+                    </div>
+                </section>
+                <section>
+                    Интерактивный ребейз
+                    <div class="r-stack">
+                        <div class="fragment">
+                            <pre>
+                                <code data-trim data-line-numbers="1-2|3|4|5">
+                                    $ git log --oneline RCv0.38.3..
+                                    $ git log --oneline RCv0.38.3..HEAD
+                                    $ git rebase -i 6b70a2b^
+                                    $ git log --oneline RCv0.38.3..
+                                    $ git push -f origin
+                                </code>
+                            </pre>
+                            <img class="" src="public/images/git/log-delta-out.png" style="height: 100px;" />
+                        </div>
+                        <img class="fragment r-frame" src="public/images/git/rebase-vim.png" style="height: 500px;" />
+                    </div>
+                </section>
+                <section>
+                    Ребейз с конфликтами
+                    <div class="r-stack">
+                        <pre class="fragment">
+                            <code data-trim data-line-numbers="1|2|3">
+                                $ git rebase -i 7adc4f3^
+                                $ git add .
+                                $ git rebase --continue
+                            </code>
+                        </pre>
+                        <img class="fragment r-frame" src="public/images/git/conflicts-vscode.png" style="height: 500px;" />
+                    </div>
+                </section>
+                <section>
+                    Логи
+                    <div>
+                        <pre>
+                            <code data-trim data-line-numbers="1-2|3-4|5-6">
+                                $ git log --oneline RCv0.38.3..HEAD
+                                $ git log --oneline RCv0.38.3..feat/FLORA-20365
+                                $ git log --oneline RCv0.38.3..feat/FLORA-20472 \
+                                 -- ./definitions/def_updateOrder 
+                                $ git log --oneline RCv0.38.3...feat/FLORA-20472
+                                $ git log --oneline origin/feat/FLORA-20472...origin/RCv0.38.3
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section>
+                    <div class="r-stack">
+                        <pre class="fragment">
+                            <code data-trim>
+                                $ git config -l
+        
+                                alias.l=log --graph --abbrev-commit --decorate \ 
+                                --format=format:"%C(bold blue)%h%C(reset) \ 
+                                - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) \ 
+                                %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)" --all
+                            </code>
+                        </pre>
+                        <img class="fragment r-frame" src="public/images/git/pretty-log.png" style="height: 400px;">
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    # Docker, K8S
+                    - Знать Docker run
+                    - Использовать docker-compose на уровне чтения и изменения переменных окружения
+                    - Использовать на базовом уровне K8S (умение пользоваться lens/прокидывать порты)
+                </section>
+                <section>
+                    Dockerfiles, images, containers
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/docker/dockerfile-go.png" style="height: 350px;">
+                        <img class="fragment r-frame" src="public/images/docker/dockerfile-node.png" style="height: 350px;">
+                        <pre class="fragment">
+                            <code data-trim data-line-numbers="1|2|3-4|5">
+                                $ docker image build -t tages-k8s-service-1 .
+                                $ docker container run -p 1235:8080 tages-k8s-service-1
+                                $ docker image tag tages-k8s-service-1 \
+                                    wallodya/tages-k8s-service-1
+                                $ docker image push wallodya/tages-k8s-service-1
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+                <section>
+                    docker-compose
+                    <pre class="fragment">
+                        <code data-trim data-line-numbers="1-37|3-21|9-11|12-14|15-16|17-21|28-30,35-37|22-30|31-37">
+                            version: "2.1"
+                            services:
+                            rabbitmq:
+                                build: 
+                                    context: .
+                                    dockerfile: Dockerfile
+                                hostname: greenapimq
+                                restart: always
+                                environment:
+                                    - RABBITMQ_CONFIG_FILE=./rabbitmq.conf
+                                    - RABBITMQ_CONF_ENV_FILE=./rabbitmq-env.conf
+                                volumes:
+                                    - ./rabbitmq:/var/lib/rabbitmq
+                                    - ./logs/:/var/log/rabbitmq
+                                ports:
+                                    - 5672:15672 
+                                healthcheck:
+                                    test: ["CMD", "curl", "-f", "http://127.0.0.1:15672"]
+                                    interval: 30s
+                                    timeout: 10s
+                                    retries: 5
+                            m1:
+                                build: 
+                                    context: m1-service
+                                    dockerfile: Dockerfile
+                                ports:
+                                    - 5000:3000
+                                depends_on:
+                                    rabbitmq:
+                                        condition: service_healthy
+                            m2:
+                                build: 
+                                    context: m2-service
+                                    dockerfile: Dockerfile
+                                depends_on:
+                                    rabbitmq:
+                                        condition: service_healthy
+                        </code>
+                    </pre>
+                </section>
+                <section>
+                    K8s
+                        <pre>
+                            <code data-trim data-line-numbers="13-33|14-18|20|30-33|1-11">
+                                apiVersion: v1
+                                kind: Service
+                                metadata:
+                                    name: tages-k8s-s1
+                                spec:
+                                    selector:
+                                        app: tages-k8s-s1
+                                    ports:
+                                    - port: 80
+                                      targetPort: 8080
+                                    type: LoadBalancer
+                                ---
+                                apiVersion: apps/v1
+                                kind: Deployment
+                                metadata:
+                                    name: service-1
+                                    labels:
+                                        app: tages-k8s
+                                spec:
+                                    replicas: 2
+                                    selector:
+                                        matchLabels:
+                                            app: tages-k8s
+                                    template:
+                                        metadata:
+                                        labels:
+                                            app: tages-k8s
+                                    spec:
+                                        containers:
+                                        - name: tages-k8s-service-1
+                                            image: wallodya/tages-k8s-service-1
+                                            ports:
+                                            - containerPort: 8080
+                            </code>
+                        </pre>
+                </section>
+                <section>
+                    <div class="r-stack">
+
+                        <pre class="fragment">
+                            <code data-trim data-line-numbers="1-2|3-5|6-9|10-13">
+                                $ kubectl get deployments
+                                No resources found in default namespace.
+                                $ kubectl apply \ 
+                                    -f k8s/service-1.deployment.yaml
+                                deployment.apps/service-1-deployment created
+                                $ kubectl get deployments
+                                NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
+                                service-1-deployment   1/2     2            1           10s
+
+                                $ kubectl get pods -A                           
+                                NAMESPACE   NAME               READY STATUS  RESTARTS AGE
+                                default     service-...-kjzdh  1/1   Running 0        17s
+                                default     service-...-rmdgj  1/1   Running 0        17s
+
+                            </code>
+                        </pre>
+                        <img class="fragment r-frame" src="public/images/k8s/descr-pod-1.png" style="height: 400px;">
+                        <img class="fragment r-frame" src="public/images/k8s/descr-pod-2.png" style="height: 400px;">
+                        <img class="fragment r-frame" src="public/images/k8s/descr-pod-3.png" style="height: 350px;">
+                    </div>
                     
                 </section>
-                <section>                    
-                    <section data-markdown>
-                        ## Soft Skills
-                    </section>
+                <section>
+                    <p>Lens</p>                    
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/k8s/lens-overview.png" style="height: 400px;">
+                        <img class="fragment r-frame" src="public/images/k8s/lens-replica-sets.png" style="height: 170px;">
+                        <img class="fragment r-frame" src="public/images/k8s/lens-pods.png" style="height: 200px;">
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    ## Инфраструктура
+                </section>
+                <section>
+                    Понимать / читать аналитику по поставленной задаче,
+                    задавать вопросы соответствующим участникам процесса
+                    <div class="r-stack">
+                        <img class="fragment" src="public/images/plt/get-needs/getNeeds-docs.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/plt/get-needs/getNeeds-SF.png" style="height: 350px;">
+                        <img class="fragment" src="public/images/misc/dm-ester.png" style="height: 400px;">
+                    </div>
+                </section>
+
+                <section>
+                    Понимать архитектуру проекта в целом (Frontend/Backend/DB/Маршрутизация)                    
+                </section>
+                <section>
+                    <h3>APIM</h3>
+                    <img class="r-frame" src="public/images/project/api-catalog.png" style="height: 500px;">
+                </section>
+                <section >
+                    <h3>Структура проекта</h3>
+                    <div data-markdown style="overflow-y: scroll; height: 600px; width: 1000px;" class="scroll-container">
+                        ![](public/images/project/architecture-2.png)
+                    </div>
+                </section>
+                <section>
+                    Эпики
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/project/epic.png" style="height: 500px;">
+                        <img class="fragment r-frame" src="public/images/project/epic-1.png" style="height: 500px;">
+                        <img class="fragment r-frame" src="public/images/project/epic-2.png" style="height: 500px;">
+                    </div>
+                </section>
+                <section>
+                    Confluence - бизнес аналитка
+                    <img class="r-frame" src="public/images/project/confluence-ba.png" style="height: 500px;">
+                </section>
+                <section>
+                    Confluence - регламенты
+                    <img class="r-frame" src="public/images/project/confluence-errors.png" style="height: 500px;">
+                </section>
+
+                <section data-markdown>
+                    Знать, что такое переменные окружения
+                </section>
+                <section>
+                    Использовать Markdown / знать синтаксис
+                    <div class="r-stack">
+                        <img class="fragment" src="public/images/misc/md-naming.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/naming-confluence.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/md-bugfix.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/md-bug-obs.png" style="height: 500px;">
+                    </div>
+                </section>
+
+            </section>
+            <section>
+                <section data-markdown>
+                    ## Soft Skills
+                </section>
+                <section>
+                    <div class="r-stack">
+                        <p class="">
+                            Уметь грамотно вести деловую переписку<br/>
+                            Уметь четко формулировать вопросы
+                        </p>
+                        <img class="fragment" src="public/images/misc/dm-ester.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/dm-rolf-1.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/dm-rolf-2.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/topic-kafka-request.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/dm-arman-1.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/misc/dm-arman-2.png" style="height: 500px;">
+                    </div>
+                </section>
+            </section>
+
+            <section data-markdown>
+                ## Специализированные компетенции
+            </section>
+
+            <section>
+                <section data-markdown>
+                    ## Задачи
+                    - Сопровождать текущие проекты 
+                    - Создавать новые методы в рамках спецификации
+                    - Участвовать в обсуждении проектов
+                </section>
+                <section data-markdown>
+                    ## REST
+
+                    - getLegalEventByOrder
+                    - getNeeds
+                    - getOrders
+                    - createLegalDocument
+                    - getNeedsForCommunication
+                    - getNeedSaleStopReasons
+                    - getDealershipLocationsForUser
+                </section>
+                <section data-markdown>
+                    ## Shared flows
+
+                    - shared_getNeeds
+                    - shared_getLegaEventsByOrder
+                    - shared_getNeedDataForOS
+                    - shared_sendNeedDataToOS
+                    - shared_createLegalDocument
+                    - shared_getOrders
+                    - shared_closeOrder
+                    - shared_getOrderByNeeds
+                    - shared_getNeedSaleStopReasons
+                </section>
+                <section data-markdown>
+                    ## EDA
+
+                    - kafka_readEventsLegalEventFi
+                    - kafka_addNeedsToIndexOSByCommunicationEvents
+                    - kafka_addNeedsToIndexOSByOrderEvents
+                    - kafka_addNeedsToIndexOSByCartEvents
+                    - kafka_addNeedsToIndexOSByNeedEvents
+                    - kafka_cancelAddtionalNeeds
+                    - kafka_eventsOrderConsumerCreateTask
+                    - kafka_eventsNeedConsumerCreateTask
+                    - kafka_cancelNeedTasks
+                </section>
+                <section>
+                    Учавствую в обсуждении проекта
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/team/dm-kirill.png" style="height: 400px;">
+                        <img class="fragment r-frame" src="public/images/team/dm-valya-kafka.png" style="height: 300px;">
+                        <img class="fragment r-frame" src="public/images/team/dm-ilya.png" style="height: 500px;">
+                        <img class="fragment r-frame" src="public/images/team/dm-ilya-2.png" style="height: 300px;">
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    ### Базовые навыки
+                </section>
+                <section data-markdown>
+                    Читать спецификацию проекта и предлагать доработки
+                </section>
+                <section>
+                    <p>
+                        Общаться с аналитиками и PM со стороны заказчика
+                    </p>
+                    <img class="fragment" src="public/images/team/fedor-dm.png" style="height: 450px;">
+                </section>
+                <section>
+                    Знать специфику OpenAPI и писать на ее основе документацию
+                    <div class="r-stack">
+                        <img class="fragment" src="public/images/plt/openapi/docs-swagger-getNeeds.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/plt/openapi/edit-docs-swagger-getNeeds.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/plt/openapi/edit-docs-swagger-getNeeds2.png" style="height: 300px;">
+                        <img class="fragment" src="public/images/plt/openapi/errors-docs-getNeeds.png" style="height: 500px;">
+                    </div>
+                </section>
+                <section data-markdown>
+                    Знать протокол HTTP/HTTPS
+                </section>
+                <section>
+                    Знать методы авторизации oAuth / api-token / HTTP Basic
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/misc/curl-auth.png" style="height: 450;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-3.png" style="height: 450;">
+                    </div>
+                </section>
+            </section>
+            <section data-markdown>
+                ## Базы данных
+            </section>
+
+            <section>
+                Верхнеуровнево понимать: postgresql, mysql, oracle, mongodb, redis и разницу между ними
+                <div class="">
+                    <img class="" src="public/images/db/pg-logo.png" style="height: 150px;">
+                    <img class="" src="public/images/db/mysql-logo.png" style="height: 150px;">
+                    <img class="" src="public/images/db/oracle-logo.png" style="height: 200px;">
+                    <img class="" src="public/images/db/mongo-logo.png" style="height: 150px;">
+                    <img class="" src="public/images/db/redis-logo.png" style="height: 150px;">
+
+                </div>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    ### Redis
+                </section>
+                <section>
+                    <h4>
+                        Типы данных
+                    </h4>
+                    <div class="r-stack">
+
+                        <div class="fragment fade-out" data-markdown>
+                            - Strings
+                            - JSON
+                            - Lists
+                            - Hashes
+                            - Sets
+                            - Sorted sets
+                        </div>
+                        <div class="fragment" data-markdown>
+                            - Streams
+                            - Time series
+                            - Geospatial
+                            - Bitmaps
+                            - Bitfields
+                            - Probabilistic    
+                        </div>
+                    </div>
+                    
+                </section>
+                <section>
+                    Команды
+                    <div class="r-stack">
+                        <pre class="fragment">
+                            <code data-trim data-line-numbers="1-2|3-4|5-6|7-8">
+                                GET some:key
+                                MGET some:key#1 some:key#2
+                                SET some:key "value"
+                                MSET some:key#1 "value1" some:key#2 "value2"
+                                INCR some:key
+                                INCRBY some:key 2
+                                DECR some:key
+                                DECRBY some:key 3 
+                            </code>
+                        </pre>
+                        <pre class="fragment">
+                            <code data-trim data-line-numbers="1|2-3|4|5|6|7|8">
+                                LPUSH some:list "list-element" 
+                                LPOP some:list 4
+                                RPOP some:list 3
+                                LREM some:list -2 "list-element"
+                                SADD some:set "foo"
+                                SDIFF some:set some:other:set#1 
+                                ZADD some:sorted:set 2 "bar"
+                                SPOP some:set 2
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    ### Postgres
+                </section>
+                <section class="r-stack">
+                    <h6 class="fragment">
+                        INSERT
+                    </h6>
+                    <img class="fragment" src="public/images/db/sql/upd-order-communications.png" style="height: 500px;">
+                </section>
+                <section class="r-stack">
+                    <h6 class="fragment">
+                        UPDATE
+                    </h6>
+                    <img class="fragment" src="public/images/db/sql/upd-order-add-needs.png" style="height: 500px;">
+                </section>
+                <section class="r-stack">
+                    <h6 class="fragment">
+                        DELETE
+                    </h6>
+                    <img class="fragment" src="public/images/db/sql/del-com-rlbc-upd-ord.png" style="height: 500px;">
+                </section>
+                <section>
+                    SELECT
+                    <div class="r-stack">
+                        <pre class="fragment"><code data-trim data-line-numbers="11-15|16-17|18-19|1-10">
+                            SELECT
+                                naob.needs_and_orders_b_uuid AS uuid,
+                                JSON_AGG(
+                                    JSON_BUILD_OBJECT(
+                                        'needs_and_orders_b4generalizing_need_uuid',
+                                        naob.needs_and_orders_b4generalizing_need_uuid,
+                                        'legal_event_b_uuid',
+                                        naocbleb.legal_event_b_uuid
+                                    )
+                                ) AS legal_events
+                            FROM 
+                                flora_needs_and_orders.needs_and_orders_b naob
+                                JOIN
+                                flora_legal_execution.needs_and_orders_covered_by_legal_event_b naocbleb 
+                                    USING(needs_and_orders_b_uuid)
+                            WHERE
+                                naob.needs_and_orders_b_uuid IN(/uuids/)
+                            GROUP BY
+                                naob.needs_and_orders_b_uuid
+                        </code></pre>
+                        <img class="fragment" src="public/images/db/sql/arr-agg-get-ord-by-nds.png" style="height: 500px;">
+                    </div>
+                </section>
+                <section data-markdown>
+                    Транзакции
+                </section>
+                <section>
+                    Миграции
+                    <div class="r-stack">
+                        <img class="fragment" src="public/images/db/sql/migr-1.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/db/sql/migr-2.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/db/sql/migr-3-up.png" style="height: 500px;">
+                        <img class="fragment" src="public/images/db/sql/migr-3-down.png" style="height: 500px;">
+                    </div>
+                </section>
+            </section>
+
+            <section data-markdown>
+                ## Platfformeco
+            </section>
+
+            <section>
+                <section data-markdown>
+                    ### Основной функционал
+                </section>
+                <section>
+                    Знать интерфейс Platformeco (Studio, Debugger, Control Center)
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/plt/orders-CC.png" style="height: 500px;">
+                        <img class="fragment r-frame" src="public/images/plt/session-creation.png" style="height: 500px;">
+                        <img class="fragment r-frame" src="public/images/plt/getNeeds-debugger.png" style="height: 500px;">
+                        <img class="fragment r-frame" src="public/images/plt/jaeger-debug.png" style="height: 500px;">
+                    </div>
+                </section>
+                <section data-markdown>
+                    Понимать REST API и создавать дефиниции на его основе
+                </section>
+                <section>
+                    Работать с базовыми политиками (параллельные вызовы, циклы и ветвления)
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/plt/policies/SF-switch-getNeeds.png" style="height: 320px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/SF-ordIM-parallel-pg.png" style="height: 300px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/loop-redis-kafka.png" style="height: 350px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/auth-http-getNeedSaleStopReasons.png" style="height: 250px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/setLog-kafka_cancelAddNeeds.png" style="height: 270px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/rollbck-http-kafkaDLQ-reidisset.png" style="height: 350px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/buffer-policies.png" style="height: 250px;">
+                    </div>
+                </section>
+                <section>
+                    Создавать и использовать SharedFlow
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/plt/policies/SF-ssReasons-self.png" style="height: 400px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/SF-ssReasons-inter.png" style="height: 500px; width: 300px;">
+                        <img class="fragment r-frame" src="public/images/plt/policies/SF-ssReasons-inflow.png" style="height: 250px; width: 500px;">
+                    </div>
+                </section>
+                <section>
+                    Понимать, что такое окружение и конфигурация канала для разных окружений, Vault
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/plt/conf/vault-vars.png" style="height: 400px; width: 450px;">
+                        <img class="fragment r-frame" src="public/images/plt/conf/vault-vars-in-config.png" style="height: 300px; width: 600px;">
+                        <img class="fragment r-frame" src="public/images/plt/conf/vault-vars-in-definition.png" style="height: 250px; width: 1000px;">
+                    </div>
+                </section>
+                <section>
+                    Настраивать отложенные задачи в platformeco
+                    <div>
+                        <img class="fragment r-frame" src="public/images/plt/conf/orders-scheduler.png" style="height: 500px; width: 800px;">
+                    </div>
+                </section>
+                <section>
+                    Добавлять новый connector / policy / loader в канал
+                            <pre class="fragment">
+                                <code data-trim data-line-numbers="2-5|6-14|15-27|28-39|40-49|50-62">
+                                {
+                                    "id": "kafka-events-cancel-need-task",
+                                    "name": "kafka-connector",
+                                    "enabled": true,
+                                    "initOrder": 5,
+                                    "settings": {
+                                      "connection": {
+                                        "group.id": "develop-events-cancel-need-task",
+                                        "bootstrap.servers": [
+                                          "rc1a-1bhooh14ikvacksl.mdb.yandexcloud.net:9092",
+                                          "rc1b-lrbevic6utt4cieb.mdb.yandexcloud.net:9092",
+                                          "rc1c-69p753bljfrnb752.mdb.yandexcloud.net:9092"
+                                        ]
+                                      },
+                                      "parameters": [
+                                        {
+                                          "key": "security.protocol",
+                                          "value": "SASL_PLAINTEXT"
+                                        },
+                                        {
+                                          "key": "sasl.jaas.config",
+                                          "value": "org.apache.kafka.common.security.scram.ScramLoginModule required username=\"{{kafkaUser}}\" password=\"{{kafkaPass}}\";"
+                                        },
+                                        {
+                                          "key": "auto.offset.reset",
+                                          "value": "earliest"
+                                        },
+                                        {
+                                          "key": "max.poll.records",
+                                          "value": "10"
+                                        },
+                                        {
+                                          "key": "sasl.mechanism",
+                                          "value": "SCRAM-SHA-512"
+                                        },
+                                        {
+                                          "key": "ssl.truststore.location",
+                                          "value": "./cert/ya.kafka.server.truststore.jks"
+                                        },
+                                        {
+                                          "key": "ssl.truststore.password",
+                                          "value": "{{truststore}}"
+                                        }
+                                      ],
+                                      "nats": {
+                                        "servers": [
+                                          "nats://localhost:4222"
+                                        ]
+                                      },
+                                      "timeouts": {
+                                        "connectorInit": 60000,
+                                        "consumerTransferBatch": 30000,
+                                        "producerSendBatch": 30000,
+                                        "commitBatch": 30000,
+                                        "consumerPollMaxDuration": 1000
+                                      },
+                                      "tracing": {
+                                        "enabled": true,
+                                        "meta": true,
+                                        "messages": true,
+                                        "batch": true
+                                      }
+                                    }
+                                  },          
+                                </code>
+                            </pre>
+                            
+                </section>
+                <section>
+                    <img class="r-frame" src="public/images/plt/conf/redis-connector-orders.png" style="height: 500px; width: 800px;">
+                </section>
+                <!-- <section data-markdown>
+                    Работать с секретами в Vault
+                </section> -->
+            </section>
+
+            <section>
+                <section data-markdown>
+                    ### Дефиниции
+                </section>
+
+                <section data-markdown>
+                    - Строить дефиниции с трансформацией данных
+                    - Строить дефиниции с агрегацией минимум от двух источников
+                    - Строить дефиниции, работающие с очередями
+                    - Строить дефиниции с кешированием данных
+                </section>
+                <section>
+                    getNeeds 
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-docs.png" style="height: 500px; width: 450px;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-all.png" style="height: 150px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-1.png" style="height: 230px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-2.png" style="height: 200px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-3.png" style="height: 220px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-4.png" style="height: 450px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-5.png" style="height: 250px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/get-needs/getNeeds-SF.png" style="height: 380px; width: 1000px;">
+                    </div>
+                </section>
+                <section>
+                    shared_getNeedsExtendInfoModel
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/plt/shared_getNeedsExtendInfoModel/sf-need-ext-all.png" style="height: 500px; width: 800px;">
+                        <img class="fragment r-frame" src="public/images/plt/shared_getNeedsExtendInfoModel/sf-need-ext-batching.png" style="height: 400px; width: 550px;">
+                        <img class="fragment r-frame" src="public/images/plt/shared_getNeedsExtendInfoModel/sf-need-ext-im-man-class.png" style="height: 550px; width: 400px;">
+                        <img class="fragment r-frame" src="public/images/plt/shared_getNeedsExtendInfoModel/sf-need-ext-im-man-class-2.png" style="height: 500px; width: 600px;">
+                        <img class="fragment r-frame" src="public/images/plt/shared_getNeedsExtendInfoModel/sf-need-ext-redis-k-class.png" style="height: 550px; width: 440px;">
+                    </div>
+                </section>
+                <section>
+                    kafka_cancelAdditionalNeeds
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdditionalNeeds-all.png" style="height: 150px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-1.png" style="height: 500px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-2.png" style="height: 500px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-4.png" style="height: 350px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-5.png" style="height: 380px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-6.png" style="height: 340px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-7.png" style="height: 270px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-8.png" style="height: 260px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/plt/kafka_cancelAdditionalNeeds/kafka_cancelAdd-monitor.png" style="height: 500px; width: 450px;">
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    # JavaScript
+                    Использовать JavaScript на уровне работы с объектами, массивами и простыми алгоритмами (маппинг, трансформация данных)
+                </section>
                     <section>
-                        - Уметь грамотно вести деловую переписку
-                        - Уметь четко формулировать вопросы
+                        <div class="r-stack">
+                            <img class="fragment r-frame" src="public/images/js/needs-for-com-extr-uuids.png" style="height: 350px; width: 1000px;">
+                            <img class="fragment r-frame" src="public/images/js/needs-for-com-put-add-needs.png" style="height: 450px; width: 1000px;">
+                            <img class="fragment r-frame" src="public/images/js/order-im-sf-add-404.png" style="height: 500px; width: 1000px;">
+                        </div>
                     </section>
-                </section>
+            </section>
 
-				<section data-markdown>
-                    ## Специализированные компетенции 
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        ## Задачи
-                    </section>
-                    <section data-markdown>
-                        Сопровождать текущие проекты
-                    </section>
-                    <section data-markdown>
-                        Создавать новые методы в рамках спецификации
-                    </section>
-                    <section data-markdown>
-                        Участвовать в обсуждении проектов
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        ### Базовые навыки
-                    </section>
-                    <section data-markdown>
-                        Читать спецификацию проекта и предлагать доработки
-                    </section>
-                    <section data-markdown>
-                        Общаться с Аналитиками и PM со стороны заказчика
-                    </section>
-                    <section data-markdown>
-                        Знать специфику OpenAPI и писать на ее основе документацию
-                    </section>
-                    <section data-markdown>
-                        Знать протокол HTTP/HTTPS
-                    </section>
-                    <section data-markdown>
-                        Знать методы авторизации oAuth / api-token / HTTP Basic
-                    </section>
-                </section>
+            <section>
                 <section data-markdown>
-                    ## Базы данных
+                    ## Литература
                 </section>
-
-                <section data-markdown>
-                    Верхнеуровнево понимать: postgresql, mysql, oracle, mongodb, redis и разницу между ними
-                </section>
-
                 <section>
-                    <section data-markdown>
-                        ### Redis
-                    </section>
+                    <h3>
+                        Grokking Algorithms
+                    </h3>
+                    <img class="fragment r-frame" src="public/images/books/grokking-alg.png" style="height: 500px; width: 350px;">
                 </section>
-
                 <section>
-                    <section data-markdown>
-                        ### Postgres
-                    </section>
-                    <section data-markdown>
-                        PG1
-                    </section>
-                    <section data-markdown>
-                        PG2
-                    </section>
-                    <section data-markdown>
-                        PG3
-                    </section>
+                    <p>
+                        Применял алгоритмы пока только на Leet Code)
+                    </p>
+                    <div class="r-stack">
+                        <img class="fragment r-frame" src="public/images/books/lc-prof.png" style="height: 260px; width: 1000px;">
+                        <img class="fragment r-frame" src="public/images/books/lc-skills.png" style="height: 500px; width: 200px;">
+                    </div>
                 </section>
+            </section>
 
-                <section data-markdown>
-                    ## Platfformeco
-                </section>
+        </div>
+    </div>
 
-                <section>
-                    <section data-markdown>
-                        ### Основной функционал
-                    </section>
-                    <section data-markdown>
-                        Знать интерфейс Platformeco (Studio, Debugger, Control Center)
-                    </section>
-                    <section data-markdown>
-                        Понимать REST API и создавать дефиниции на его основе
-                    </section>
-                    <section data-markdown>
-                        Работать с базовыми политиками (параллельные вызовы, циклы и ветвления)
-                    </section>
-                    <section data-markdown>
-                        Создавать и использовать SharedFlow
-                    </section>
-                    <section data-markdown>
-                        Понимать, что такое окружение и конфигурация канала для разных окружений
-                    </section>
-                    <section data-markdown>
-                        Настраивать отложенные задачи в platformeco
-                    </section>
-                    <section data-markdown>
-                        Добавлять новый connector / policy / loader в канал
-                    </section>
-                    <section data-markdown>
-                        Работать с секретами в Vault
-                    </section>
-                </section>
-                
-                <section>
-                    <section data-markdown>
-                        ### Дефиниции
-                    </section>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
 
-                    <section data-markdown>
-                        Строить дефиниции с трансформацией данных
-                    </section>
-                    <section data-markdown>
-                        Строить дефиниции с агрегацией минимум от двух источников
-                    </section>
-                    <section data-markdown>
-                        Строить дефиниции, работающие с очередями
-                    </section>
-                    <section data-markdown>
-                        Строить дефиниции с кешированием данных
-                    </section>
-                    <section data-markdown>
-                        Строить дефиниции, работающие с буффером
-                    </section>
-                </section>
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
 
-                <section>
-                    <section data-markdown>
-                        ### JavaScript
-                    </section>
-
-                    <section data-markdown>
-                        JS1
-                    </section>
-                    <section data-markdown>
-                        JS2
-                    </section>
-                    <section data-markdown>
-                        JS3
-                    </section>
-                </section>
-
-                <section>
-                    <section data-markdown>
-                        ## Литература
-                    </section>
-                    <section data-markdown>
-                        Книга 1
-                    </section>
-                    <section data-markdown>
-                        Книга 2
-                    </section>
-                    <section data-markdown>
-                        Книга 3
-                    </section>
-                </section>
-                
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
 </html>
